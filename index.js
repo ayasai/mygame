@@ -56,3 +56,6 @@ function resetScore() {
     score = 0;
     scoreDisplay.textContent = `Score: ${score}`;
 }
+
+startGame();
+resetScore();
