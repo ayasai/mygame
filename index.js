@@ -41,3 +41,13 @@ function startGame() {
         scoreDisplay.textContent = `Score: ${score}`;
     }, 1000);
 }
+
+function gameOver() {
+    alert("GAME OVER");
+    clearInterval(intervalId);
+    if (score > highScore) {
+        highScore = score;
+        highScoreDisplay.textContent = `High Score: ${highScore}`;
+    }
+    resetScore();
+}
