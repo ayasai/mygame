@@ -21,3 +21,12 @@ setInterval(() => {
         gameOver();
     }
 }, 10);
+
+function randomizeCactus() {
+    const randomLeft = Math.random() * 100; 
+    const randomDelay = Math.random() * 2000 + 1000; 
+
+    cactus.style.left = `${randomLeft}%`;
+
+    setTimeout(randomizeCactus, randomDelay);
+}
