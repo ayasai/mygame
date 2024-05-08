@@ -34,3 +34,10 @@ randomizeCactus();
 
 let score = 0;
 let highScore = 0;
+
+function startGame() {
+    setInterval(() => {
+        score++;
+        scoreDisplay.textContent = `Score: ${score}`;
+    }, 1000);
+}
