@@ -51,3 +51,8 @@ function gameOver() {
     }
     resetScore();
 }
+
+function resetScore() {
+    score = 0;
+    scoreDisplay.textContent = `Score: ${score}`;
+}
